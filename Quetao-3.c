@@ -6,25 +6,21 @@ int main() {
     int B[4][4];
     int result[4][4];
     char operation[10];
-
-    // Ler os valores da matriz A
+    
     for (int i = 0; i < 4; i++) {
         for (int j = 0; j < 4; j++) {
             scanf("%d", &A[i][j]);
         }
     }
 
-    // Ler os valores da matriz B
     for (int i = 0; i < 4; i++) {
         for (int j = 0; j < 4; j++) {
             scanf("%d", &B[i][j]);
         }
     }
-
-    // Ler a operação a ser realizada
+   
     scanf("%s", operation);
-
-    // Realizar a operação e calcular a matriz resultante
+    
     if (strcmp(operation, "soma") == 0) {
         for (int i = 0; i < 4; i++) {
             for (int j = 0; j < 4; j++) {
@@ -47,8 +43,7 @@ int main() {
             }
         }
     } 
-
-    // Imprimir a matriz resultante formatada
+    
     for (int i = 0; i < 4; i++) {
         for (int j = 0; j < 4; j++) {
             printf("%4d", result[i][j]);
